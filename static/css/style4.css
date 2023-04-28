@@ -1,0 +1,67 @@
+/* Styles for registration page */
+
+/* Title */
+h2 {
+    font-weight: bold;
+  }
+  
+  /* Form elements */
+  .form-control {
+    width: 60%;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  /* Picture */
+  .picture-container {
+    float: right;
+    width: 40%;
+    height: 500px;
+    background-image: url('../css/bgpic.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Colors and animations */
+  body {
+    background-color: #f7f7f7;
+  }
+  
+  .btn-primary {
+    background-color: #9cc4ff;
+    border-color: #9cd2ff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0a2c82;
+    border-color: #625fff;
+    transition: all 0.3s ease;
+  }
+  
+  label {
+    color: #333;
+  }
+  
+  input[type="text"], input[type="email"], input[type="password"] {
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+  }
+  
+  input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px #9cd2ff;;
+  }
+  
+  a {
+    color: #9cd2ff;;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #9cd2ff;;
+    text-decoration: none;
+  }
+  

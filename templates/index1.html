@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<head>
+		<title>Contact Management Home Page</title>
+		<!-- Add Bootstrap styles -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+		<!-- Include custom style.css -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+	</head>
+</head>
+<body>
+	<!-- Add background image -->
+	<div class="bg-image"></div>
+	<div class="container">
+		<h1 class="welcome-message">Contact Management</h1>
+		<p>Please login or register to continue.</p>
+		<a href="/login" class="btn btn-primary btn-lg btn-block">Login</a>
+		<a href="/register" class="btn btn-secondary btn-lg btn-block">Register</a>
+	</div>
+	<!-- Add footer -->
+	<footer>
+		<p>&copy; 2023 Contact Management. All Rights Reserved.</p>
+	</footer>
+	
+</body>
+</html>

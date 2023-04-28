@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Management</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<style>
+		/* Custom styles */
+		body {
+			background-color: #f7f7f7;
+		}
+		h1 {
+			margin-top: 40px;
+			margin-bottom: 20px;
+			font-weight: bold;
+			text-align: center;
+		}
+		.container {
+			max-width: 500px;
+			margin: auto;
+			text-align: center;
+			padding-top: 40px;
+			padding-bottom: 40px;
+			background-color: white;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px #d9d9d9;
+		}
+		.btn {
+			margin-top: 20px;
+			margin-bottom: 10px;
+		}
+	</style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Contact Management</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Groups</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Settings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Help</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('register') }}">Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('login') }}">Login</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-4">
+      <h1>Welcome to Contact Management</h1>
+      <p>Manage your contacts and groups easily with our simple and user-friendly website.</p>
+      <p>Please login or register to continue.</p>
+      <a href="{{ url_for('login') }}" class="btn btn-primary btn-lg btn-block">Login</a>
+      <a href="{{ url_for('register') }}" class="btn btn-secondary btn-lg btn-block">Register</a>
+    </div>
+  </body>
+</html>

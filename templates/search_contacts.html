@@ -1,0 +1,29 @@
+<html>
+<head>
+    <!-- Include CSS file -->
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style3.css') }}">
+
+</head>
+
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Search Contacts</h1>
+<form action="{{ url_for('search_contacts') }}" method="post">
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+  </div>
+  <div>
+    <label for="category">Category:</label>
+    <select id="category" name="category">
+      <option value="">All</option>
+      <option value="Family">Family</option>
+      <option value="Friends">Friends</option>
+      <option value="Colleagues">Colleagues</option>
+    </select>
+  </div>
+  <button type="submit">Search</button>
+</form>
+{% endblock %}
+</html>
