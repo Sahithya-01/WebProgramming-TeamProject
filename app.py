@@ -11,7 +11,7 @@ app.secret_key = 'your-secret-key'
 # Configure MySQL Connection
 db = pymysql.connect(host='localhost',
                              user='root',
-                             password='Lalitha@1998',
+                             password='*****',
                              db='user_registration',
                              charset='utf8mb4',
                              cursorclass=pymysql.cursors.DictCursor)
